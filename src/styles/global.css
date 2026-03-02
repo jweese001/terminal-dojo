@@ -52,13 +52,7 @@ ul, ol {
 
 /* ═══ Body ═══ */
 body {
-	background-color: var(--bg);
-	background-image: var(--bg-image);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-blend-mode: screen;
+	background: var(--bg);
 	font-family: var(--sans);
 	color: var(--text);
 	-webkit-font-smoothing: antialiased;
@@ -67,6 +61,15 @@ body {
 	min-height: 100vh;
 }
 
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background: var(--bg-image) center / cover no-repeat;
+	opacity: 0.2;
+	pointer-events: none;
+}
 /* ═══ Layout ═══ */
 .container {
 	max-width: 700px;
