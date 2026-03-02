@@ -1,0 +1,7 @@
+{
+  "defaultThinkingLevel": "low",
+  "compaction": {
+    "keepRecentTokens": 8000,
+    "reserveTokens": 60000
+  }
+}
