@@ -16,8 +16,8 @@ ul, ol {
 	--bg: #001122;
 	--bg-gradient: linear-gradient(135deg, #001122 0%, #002244 50%, #001933 100%);
 	--bg-image: none;
-	--card-bg: rgba(26, 26, 26, 0.95);
-	--card-bg-hover: rgba(36, 36, 36, 0.95);
+	--card-bg: rgba(26, 26, 26, 0.98);
+	--card-bg-hover: rgba(36, 36, 36, 0.98);
 	--card-border: #334455;
 	--text: #ffffff;
 	--text-secondary: #cccccc;
