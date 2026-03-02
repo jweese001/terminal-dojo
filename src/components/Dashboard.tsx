@@ -15,7 +15,7 @@ export function Dashboard({ progress, onStartDailyQuest, onSelectCategory, onRes
 	return (
 		<div className="container fade-in">
 			<div className="hero-image-wrap">
-				<img className="hero-image" src="/images/hero.webp" alt="Terminal Dojo hero banner" />
+				<img className="hero-image" src={`${import.meta.env.BASE_URL}images/hero.webp`} alt="Terminal Dojo hero banner" />
 				<div className="hero-overlay">
 					<div className="hero-copy">
 						<h1>Terminal Dojo</h1>
@@ -63,7 +63,7 @@ export function Dashboard({ progress, onStartDailyQuest, onSelectCategory, onRes
 					const completed = progress.categoryProgress[cat.id] || 0;
 					const hasBadge = completed > 0;
 					const mastered = completed >= 10;
-					const rewardSrc = mastered ? '/images/success.webp' : '/images/inprogress.jpg';
+					const rewardSrc = mastered ? `${import.meta.env.BASE_URL}images/success.webp` : `${import.meta.env.BASE_URL}images/inprogress.jpg`;
 					const rewardAlt = mastered ? `${cat.name} mastery reward unlocked` : `${cat.name} in progress`;
 					return (
 						<div

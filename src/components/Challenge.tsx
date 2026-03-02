@@ -24,8 +24,9 @@ function getTypeLabel(type: ChallengeData['type']): string {
 	}
 }
 
-const SUCCESS_IMAGES = ['/images/success.webp', '/images/success02.webp', '/images/success03.webp'];
-const FAIL_IMAGES = ['/images/fail.webp', '/images/fail02.webp', '/images/fail03.webp'];
+const BASE = import.meta.env.BASE_URL;
+const SUCCESS_IMAGES = [`${BASE}images/success.webp`, `${BASE}images/success02.webp`, `${BASE}images/success03.webp`];
+const FAIL_IMAGES = [`${BASE}images/fail.webp`, `${BASE}images/fail02.webp`, `${BASE}images/fail03.webp`];
 
 export function Challenge({ session, currentChallenge, onSubmit, onNext, onQuit }: ChallengeProps) {
 	const [input, setInput] = useState('');
